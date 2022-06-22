@@ -17,6 +17,9 @@ function numberClick(number) {
     if (operation === "equals") {
         operation = undefined;
     }
+    if (number === 0 && outputText.innerHTML === "0") {
+        return;
+    }
     userInputArray.push(number);
     outputText.innerHTML = userInputArray.join("");
 }
