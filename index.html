@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div id="calculator-container">
+            <div id="output-area">
+                <div id="output-text">0</div>
+            </div>
+            <div id="button-area">
+                <table>
+                    <tr>
+                        <td
+                            id="ac-button"
+                            class="top-button button"
+                            onclick="clearButton()"
+                        >
+                            AC
+                        </td>
+                        <td
+                            id="plus-minus-button"
+                            class="top-button button"
+                            onclick="plusMinusButton()"
+                        >
+                            &plusmn;
+                        </td>
+                        <td
+                            id="percent-button"
+                            class="top-button button"
+                            onclick="percentButton()"
+                        >
+                            %
+                        </td>
+                        <td
+                            id="divide-button"
+                            class="orange-button button"
+                            onclick="divideButton()"
+                        >
+                            &divide;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            id="seven-button"
+                            class="button"
+                            onclick="numberClick(7)"
+                        >
+                            7
+                        </td>
+                        <td
+                            id="eight-button"
+                            class="button"
+                            onclick="numberClick(8)"
+                        >
+                            8
+                        </td>
+                        <td
+                            id="nine-button"
+                            class="button"
+                            onclick="numberClick(9)"
+                        >
+                            9
+                        </td>
+                        <td
+                            id="multiply-button"
+                            class="orange-button button"
+                            onclick="multiplyButton()"
+                        >
+                            &times;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            id="four-button"
+                            class="button"
+                            onclick="numberClick(4)"
+                        >
+                            4
+                        </td>
+                        <td
+                            id="five-button"
+                            class="button"
+                            onclick="numberClick(5)"
+                        >
+                            5
+                        </td>
+                        <td
+                            id="six-button"
+                            class="button"
+                            onclick="numberClick(6)"
+                        >
+                            6
+                        </td>
+                        <td
+                            id="subtract-button"
+                            class="orange-button button"
+                            onclick="subtractButton()"
+                        >
+                            &minus;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            id="one-button"
+                            class="button"
+                            onclick="numberClick(1)"
+                        >
+                            1
+                        </td>
+                        <td
+                            id="two-button"
+                            class="button"
+                            onclick="numberClick(2)"
+                        >
+                            2
+                        </td>
+                        <td
+                            id="three-button"
+                            class="button"
+                            onclick="numberClick(3)"
+                        >
+                            3
+                        </td>
+                        <td
+                            id="plus-button"
+                            class="orange-button button"
+                            onclick="addButton()"
+                        >
+                            &plus;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td
+                            id="zero-button"
+                            class="button"
+                            onclick="numberClick(0)"
+                        >
+                            0
+                        </td>
+                        <td
+                            id="point-button"
+                            class="button"
+                            onclick="decimalClick('.')"
+                        >
+                            .
+                        </td>
+                        <td
+                            id="delete-button"
+                            class="button"
+                            onclick="backspaceButton()"
+                        >
+                            &#9003;
+                        </td>
+                        <td
+                            id="equals-button"
+                            class="orange-button button"
+                            onclick="equalsButton()"
+                        >
+                            =
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
