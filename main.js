@@ -340,6 +340,10 @@ document.addEventListener("keydown", function (event) {
         case "Escape":
             clearButton();
             break;
+        case "_":
+            plusMinusButton();
+        case "%":
+            percentButton();
         default:
             break;
     }
