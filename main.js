@@ -342,8 +342,10 @@ document.addEventListener("keydown", function (event) {
             break;
         case "_":
             plusMinusButton();
+            break;
         case "%":
             percentButton();
+            break;
         default:
             break;
     }
